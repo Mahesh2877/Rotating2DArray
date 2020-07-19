@@ -14,7 +14,6 @@ def rotate(given_array, n):
             for k in range(4):
                 temporary[k] = given_array[current_i][current_j]
                 (current_i, current_j) = rotate_sub(current_i, current_j, n)
-                print("\nTemp: ", temporary)
             for k in range(4):
                 given_array[current_i][current_j] = temporary[((k - 1) % 4)]
                 (current_i, current_j) = rotate_sub(current_i, current_j, n)
