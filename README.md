@@ -1,10 +1,10 @@
-#Rotating 2D Array
+# Rotating 2D Array
 
-##Problem Statement - To rotate a given square matrix clockwise by 90 degrees.
+## Problem Statement - To rotate a given square matrix clockwise by 90 degrees.
 
 The solution can be of two types -> In-place and Out-of-place.
 
-###In Place Solution -
+### In Place Solution -
 Here, we are not allowed to create a separate matrix. We have to edit the contents of the original matrix. As a result, this involves moving values of one cell(say, A) to  another cell(say, B), while moving the original value of cell B to cell C.
 
 We split the matrix into four parts, the upper left, upper right, lower left and lower right portions. This can sometimes(if the matrix has an odd number of rows and columns) leave out the middle cell which will not change values during the rotation.
@@ -17,7 +17,7 @@ Since the size of the four individual portions will be the same, we only need to
 We repeat the step in the above paragraph but for the next cell in the upper-left portion.
 
 
-###Out of Place Solution -
+### Out of Place Solution -
 Here, we are allowed to create a separate copy of the matrix. Hence, this is a much easier method as we can reference the original matrix to create the values in the copy matrix.
 
 Rotating a square matrix by 90 degrees simply involves interchanging the rows and the columns. The first row becomes the last column, the second row becomes the second column, etc.
